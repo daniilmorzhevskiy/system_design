@@ -6,7 +6,7 @@ RUN apt-get update \
     && pip install --no-cache-dir --upgrade pip
 
 WORKDIR /app
-COPY ./system_design/python/src/auth/requirements.txt /app
+COPY ./python/src/auth/requirements.txt /app
 RUN pip install --no-cache-dir --requirement /app/requirements.txt
 COPY . /app
 
