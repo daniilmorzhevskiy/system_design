@@ -6,7 +6,7 @@ RUN apt-get update \
     && pip install --no-cache-dir --upgrade pip
 
 WORKDIR /app
-COPY ./requirements.txt /app
+COPY ./requirements1.txt /app
 RUN pip install --no-cache-dir --requirement /app/requirements.txt
 COPY . /app
 
