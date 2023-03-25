@@ -75,7 +75,7 @@ jobs:
     # Push the Docker image to Google Artifact Registry
     - name: Publish
       run: |-
-        docker push us-central1-docker.pkg.dev/gcp-test-project-003/docker-artifact-regisrty
+        docker push us-central1-docker.pkg.dev/gcp-test-project-003/docker-artifact-regisrty/auth:latest
     # Set up kustomize
     - name: Set up Kustomize
       run: |-
