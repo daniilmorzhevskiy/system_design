@@ -23,7 +23,7 @@ env:
   GKE_ZONE: us-central1-c   # TODO: update to cluster zone
   DEPLOYMENT_NAME: gke-test # TODO: update to deployment name
   REPOSITORY: test-docker-repo
-  IMAGE: auth
+  IMAGE: auth:latest
 
 jobs:
   setup-build-publish-deploy:
