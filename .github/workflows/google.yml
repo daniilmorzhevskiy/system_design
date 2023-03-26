@@ -71,8 +71,8 @@ jobs:
           
     - name: Configure Docker Client
       run: |-
-        gcloud auth configure-docker --quite
-        gcloud auth configure-docker us-central1-docker.pkg.dev --quite
+        gcloud auth configure-docker --quiet
+        gcloud auth configure-docker us-central1-docker.pkg.dev --quiet
         
     # Push the Docker image to Google Artifact Registry
     - name: Publish
