@@ -78,7 +78,7 @@ jobs:
     - name: Publish
       run: |-
         docker tag $IMAGE us-central1-docker.pkg.dev/$PROJECT_ID/test-docker-repo/$IMAGE
-        docker push $GAR_LOCATION-docker.pkg.dev/$PROJECT_ID/test-docker-repo/$IMAGE:latest
+        docker push $GAR_LOCATION-docker.pkg.dev/$PROJECT_ID/test-docker-repo/$IMAGE
     # Set up kustomize
     - name: Set up Kustomize
       run: |-
