@@ -23,7 +23,7 @@ env:
   GKE_ZONE: us-central1-c   # TODO: update to cluster zone
   DEPLOYMENT_NAME: gke-test # TODO: update to deployment name
   REPOSITORY: test-docker-repo
-  IMAGE: auth:latest
+  IMAGE: auth
 
 jobs:
   setup-build-publish-deploy:
@@ -68,7 +68,7 @@ jobs:
     - name: Build
       run: |-
          docker build -f ./python/src/auth/Dockerfile \
-         --tag "$GAR_LOCATION-docker.pkg.dev/$PROJECT_ID/$REPOSITORY/$IMAGE" \
+         --tag "$GAR_LOCATION-docker.pkg.dev/$PROJECT_ID/$REPOSITORY/$IMAGE:latest" \
          .
           
     - name: Configure Docker Client
